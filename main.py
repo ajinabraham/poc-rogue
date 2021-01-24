@@ -49,7 +49,7 @@ def libc_environ(ret):
         if var:
             ret[var] = 1
 
-def steal_libc(nprocs=2):
+def steal_libc():
     """libc.environ() can throw segfault."""
     # See: https://stackoverflow.com/a/9062779/2927282
     manager = mp.Manager()
