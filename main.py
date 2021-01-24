@@ -104,5 +104,3 @@ def main():
         print('Exfiltrating data to attacker')
     except Exception:
         pass
-
-main()
